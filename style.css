@@ -1,0 +1,94 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #f3f3f3;
+}
+.main-banner{
+  margin: 0 auto;
+  /*place the banner in the center*/
+  width: 1200px;
+  height: 800px;
+  background-color: white;
+  overflow: hidden;
+  /*hides any element that goes outside the container*/
+  position: relative;
+}
+.img-ban{
+  width:100%;
+  height:100%;
+  position:absolute;
+  /*this position:absolute cannot work unless the parent element has a position: relative*/
+  top: 0px;
+  transition: all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  -moz-transition: all ease-in-out 500ms;
+  -o-transition: all ease-in-out 500ms;
+}
+.main-banner #img-ban5{
+  background-image: url("/Users/sarahliu/Desktop/img/sg5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-banner #img-ban4{
+  background-image: url("/Users/sarahliu/Desktop/img/sg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-banner #img-ban3{
+  background-image: url("/Users/sarahliu/Desktop/img/sg3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-banner #img-ban2{
+  background-image: url("/Users/sarahliu/Desktop/img/sg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-banner #img-ban1{
+  background-image: url("/Users/sarahliu/Desktop/img/sg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.imgbanbtn{
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  position: absolute;
+  top:360px;
+  z-index: 2000;
+  /*the z-index needs to higher than all other elements so that we can always see the button*/
+  opacity: 0.6;
+  cursor: pointer;
+}
+.imgbanbtn:hover{
+  opacity: 0.8;
+}
+.imgbanbtn-prev{
+  left: 5px;
+  background-image: url("/Users/sarahliu/Desktop/img/orange-left-arrow.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.imgbanbtn-next{
+  right: 5px;
+  background-image: url("/Users/sarahliu/Desktop/img/orange-right-arrow.png");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h2{
+  font-family: arial;
+  font-size: 60px;
+  color: lightgreen;
+}
+#img-ban5 h2, #img-ban3 h2{
+  color: green;
+}
